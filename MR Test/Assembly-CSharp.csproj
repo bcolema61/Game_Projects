@@ -62,106 +62,203 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\EazyCamera\Code\Animation\EzAnimator.cs" />
-    <Compile Include="Assets\EazyCamera\Code\Camera\EzCamera.cs" />
-    <Compile Include="Assets\EazyCamera\Code\Camera\EzCameraCollider.cs" />
-    <Compile Include="Assets\EazyCamera\Code\Camera\EzCameraController.cs" />
-    <Compile Include="Assets\EazyCamera\Code\Camera\EzCameraSettings.cs" />
-    <Compile Include="Assets\EazyCamera\Code\Camera\EzLockOnTarget.cs" />
-    <Compile Include="Assets\EazyCamera\Code\Controller\EzPlayerController.cs" />
-    <Compile Include="Assets\EazyCamera\Code\Player\Locomotion\EzMotor.cs" />
-    <Compile Include="Assets\EazyCamera\Code\StateMachine\CameraStates\EzCameraState.cs" />
-    <Compile Include="Assets\EazyCamera\Code\StateMachine\CameraStates\EzFollowState.cs" />
-    <Compile Include="Assets\EazyCamera\Code\StateMachine\CameraStates\EzLockOnState.cs" />
-    <Compile Include="Assets\EazyCamera\Code\StateMachine\CameraStates\EzOrbitState.cs" />
-    <Compile Include="Assets\EazyCamera\Code\StateMachine\CameraStates\EzStationaryState.cs" />
-    <Compile Include="Assets\EazyCamera\Code\StateMachine\EzStateMachine.cs" />
-    <Compile Include="Assets\EazyCamera\Code\Util\ExtensionMethods.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_FlyMovement.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_FollowTarget.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_HoldPosition.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_ObjectVibrate.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_PowerUpObject.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_RotateSpinSin.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_RotateTo.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_Rotator.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_Shared_PanelAnimations.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_SlideObjectTo.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_Spinner.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_TimedExecutor.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_TranslateTransformSpace.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Cameras\FBasic_FreeCameraBehaviour.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Cameras\FBasic_TPPCameraBehaviour.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\Bases\FBasic_CharacterHorizontalBase.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\Bases\FBasic_CharacterInputBase.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\Bases\FBasic_CharacterMovementBase.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\Extended\FBasic_FheelekFighter.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\FBasic_CharacterController.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\FBasic_CharacterInputAxis.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\FBasic_CharacterInputKeys.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\FBasic_FheelekController.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\FBasic_RigidbodyMovement.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\Scripts\FBasic_FheelekAnimator.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_AddPhysicalImpact.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_Draggable.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_InteractionAreaBase.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_InteractionAreaCanvas.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_Pullable.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_PullableDrawer.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_PullableHinge.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_PullableKnob.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_PullableLever.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_TrueInteractionBase.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Physical\FBasic_ProjectileBase.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Physical\FBasic_Shared_BulletHittable.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\Bases\FBasic_MaterialScriptBase.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_AnimatorPlayState.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_CourutineHelper.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_DestroyAfter.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_DestroyOthersWithMe.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_DuplicateObjects.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_FadeOutMaterialAndDestroy.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_MaterialFloatAnimate.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_MaterialOffset.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_MaterialRandomColor.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_MaterialTiler.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_SphericDuplicateOn.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_TriggerEvents.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\DEMO - FBasic Assets\Scripts\FBasic_Demo_Cannon.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\DEMO - FBasic Assets\Scripts\FBasic_Demo_CharacterChoosePanel.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\DEMO - FBasic Assets\Scripts\FBasic_Demo_Controller.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\DEMO - FBasic Assets\Scripts\FBasic_Demo_HideText.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\DEMO - FBasic Assets\Scripts\FBasic_Demo_Projectile.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\DEMO - FBasic Assets\Scripts\FBasic_Demo_PullableExample.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Editor Tools\FEditor_StylesIn.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Editor Tools\FHierarchyIcons.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Editor Tools\Property Attributes\FPD_HideOnBoolAttribute.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Editor Tools\Property Attributes\FPD_LayersAttribute.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Editor Tools\Property Attributes\FPD_MinMaxSliderAttribute.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Editor Tools\Property Attributes\FPD_MiscAttributes.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\FHelpers\FAnimationClips.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\FHelpers\FAnimatorMethods.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\FHelpers\FColorMethods.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\FHelpers\FDebug.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\FHelpers\FEasing.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\FHelpers\FLogicMethods.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\FHelpers\FStringMethods.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\FHelpers\FTransformMethods.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\FHelpers\FVectorMethods.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Scripts\FBasic_Enums.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Scripts\FBasic_NotRepetiveSelector.cs" />
-    <Compile Include="Assets\FImpossible Games\FBasic Assets\Scripts\FBasics_PathData.cs" />
-    <Compile Include="Assets\Grass And Flowers Pack 1\Example Scene\SimpleTextureDrawing.cs" />
+    <Compile Include="Assets\External Assets\EazyCamera\Code\Animation\EzAnimator.cs" />
+    <Compile Include="Assets\External Assets\EazyCamera\Code\Camera\EzCamera.cs" />
+    <Compile Include="Assets\External Assets\EazyCamera\Code\Camera\EzCameraCollider.cs" />
+    <Compile Include="Assets\External Assets\EazyCamera\Code\Camera\EzCameraController.cs" />
+    <Compile Include="Assets\External Assets\EazyCamera\Code\Camera\EzCameraSettings.cs" />
+    <Compile Include="Assets\External Assets\EazyCamera\Code\Camera\EzLockOnTarget.cs" />
+    <Compile Include="Assets\External Assets\EazyCamera\Code\Controller\EzPlayerController.cs" />
+    <Compile Include="Assets\External Assets\EazyCamera\Code\Player\Locomotion\EzMotor.cs" />
+    <Compile Include="Assets\External Assets\EazyCamera\Code\StateMachine\CameraStates\EzCameraState.cs" />
+    <Compile Include="Assets\External Assets\EazyCamera\Code\StateMachine\CameraStates\EzFollowState.cs" />
+    <Compile Include="Assets\External Assets\EazyCamera\Code\StateMachine\CameraStates\EzLockOnState.cs" />
+    <Compile Include="Assets\External Assets\EazyCamera\Code\StateMachine\CameraStates\EzOrbitState.cs" />
+    <Compile Include="Assets\External Assets\EazyCamera\Code\StateMachine\CameraStates\EzStationaryState.cs" />
+    <Compile Include="Assets\External Assets\EazyCamera\Code\StateMachine\EzStateMachine.cs" />
+    <Compile Include="Assets\External Assets\EazyCamera\Code\Util\ExtensionMethods.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_FlyMovement.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_FollowTarget.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_HoldPosition.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_ObjectVibrate.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_PowerUpObject.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_RotateSpinSin.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_RotateTo.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_Rotator.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_Shared_PanelAnimations.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_SlideObjectTo.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_Spinner.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_TimedExecutor.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Animations\FBasic_TranslateTransformSpace.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Cameras\FBasic_FreeCameraBehaviour.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Cameras\FBasic_TPPCameraBehaviour.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\Bases\FBasic_CharacterHorizontalBase.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\Bases\FBasic_CharacterInputBase.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\Bases\FBasic_CharacterMovementBase.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\Extended\FBasic_FheelekFighter.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\FBasic_CharacterController.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\FBasic_CharacterInputAxis.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\FBasic_CharacterInputKeys.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\FBasic_FheelekController.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\FBasic_RigidbodyMovement.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Character Controllers\Scripts\FBasic_FheelekAnimator.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_AddPhysicalImpact.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_Draggable.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_InteractionAreaBase.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_InteractionAreaCanvas.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_Pullable.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_PullableDrawer.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_PullableHinge.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_PullableKnob.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_PullableLever.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Interactive\FBasic_TrueInteractionBase.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Physical\FBasic_ProjectileBase.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Physical\FBasic_Shared_BulletHittable.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\Bases\FBasic_MaterialScriptBase.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_AnimatorPlayState.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_CourutineHelper.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_DestroyAfter.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_DestroyOthersWithMe.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_DuplicateObjects.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_FadeOutMaterialAndDestroy.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_MaterialFloatAnimate.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_MaterialOffset.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_MaterialRandomColor.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_MaterialTiler.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_SphericDuplicateOn.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Behaviours\Utilities\FBasic_TriggerEvents.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\DEMO - FBasic Assets\Scripts\FBasic_Demo_Cannon.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\DEMO - FBasic Assets\Scripts\FBasic_Demo_CharacterChoosePanel.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\DEMO - FBasic Assets\Scripts\FBasic_Demo_Controller.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\DEMO - FBasic Assets\Scripts\FBasic_Demo_HideText.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\DEMO - FBasic Assets\Scripts\FBasic_Demo_Projectile.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\DEMO - FBasic Assets\Scripts\FBasic_Demo_PullableExample.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Editor Tools\FEditor_StylesIn.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Editor Tools\FHierarchyIcons.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Editor Tools\Property Attributes\FPD_HideOnBoolAttribute.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Editor Tools\Property Attributes\FPD_LayersAttribute.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Editor Tools\Property Attributes\FPD_MinMaxSliderAttribute.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Editor Tools\Property Attributes\FPD_MiscAttributes.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\FHelpers\FAnimationClips.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\FHelpers\FAnimatorMethods.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\FHelpers\FColorMethods.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\FHelpers\FDebug.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\FHelpers\FEasing.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\FHelpers\FLogicMethods.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\FHelpers\FStringMethods.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\FHelpers\FTransformMethods.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\FHelpers\FVectorMethods.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Scripts\FBasic_Enums.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Scripts\FBasic_NotRepetiveSelector.cs" />
+    <Compile Include="Assets\External Assets\FImpossible Games\FBasic Assets\Scripts\FBasics_PathData.cs" />
+    <Compile Include="Assets\External Assets\Grass And Flowers Pack 1\Example Scene\SimpleTextureDrawing.cs" />
+    <Compile Include="Assets\External Assets\RadarChart\Scripts\RadarPolygon.cs" />
+    <Compile Include="Assets\External Assets\RadarChartUI\Scripts\DemoUI\ChartSideTitleController.cs" />
+    <Compile Include="Assets\External Assets\RadarChartUI\Scripts\DemoUI\ChartSideValueController.cs" />
+    <Compile Include="Assets\External Assets\RadarChartUI\Scripts\DemoUI\TestUIController.cs" />
+    <Compile Include="Assets\External Assets\RadarChartUI\Scripts\RadarChartCore\RadarChart.cs" />
+    <Compile Include="Assets\External Assets\RadarChartUI\Scripts\RadarChartCore\RadarChartLine.cs" />
+    <Compile Include="Assets\External Assets\RadarChartUI\Scripts\RadarChartCore\RadarChartPolygon.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\2D\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\2D\Scripts\Restarter.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Cameras\Scripts\AutoCam.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Cameras\Scripts\FreeLookCam.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Cameras\Scripts\HandHeldCam.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Cameras\Scripts\LookatTarget.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Cameras\Scripts\PivotBasedCameraRig.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Cameras\Scripts\ProtectCameraFromWallClip.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Cameras\Scripts\TargetFieldOfView.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Characters\RollerBall\Scripts\Ball.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Environment\Water\Water\Scripts\PlanarReflection.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Environment\Water\Water\Scripts\SpecularLighting.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\ParticleSystems\Scripts\AfterburnerPhysicsForce.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\ParticleSystems\Scripts\ExplosionPhysicsForce.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\ParticleSystems\Scripts\Explosive.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\ParticleSystems\Scripts\ExtinguishableParticleSystem.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\ParticleSystems\Scripts\FireLight.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\ParticleSystems\Scripts\SmokeParticles.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\ActivateTrigger.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\AlphaButtonClickMask.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\AutoMoveAndRotate.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\CameraRefocus.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\CurveControlledBob.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\DragRigidbody.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\DynamicShadowSettings.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\EventSystemChecker.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\FollowTarget.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\ForcedReset.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\FOVKick.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\FPSCounter.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\LerpControlledBob.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\ObjectResetter.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\PlatformSpecificContent.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\SimpleActivatorMenu.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\SimpleMouseRotator.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\SmoothFollow.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\TimedObjectActivator.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\TimedObjectDestructor.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\WaypointCircuit.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Utility\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneAiControl.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneAudio.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneController.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneControlSurfaceAnimator.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplanePropellerAnimator.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl2Axis.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl4Axis.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Aircraft\Scripts\JetParticleEffect.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Aircraft\Scripts\LandingGear.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Car\Scripts\BrakeLight.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Car\Scripts\CarAIControl.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Car\Scripts\CarAudio.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Car\Scripts\CarController.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Car\Scripts\CarSelfRighting.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Car\Scripts\CarUserControl.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Car\Scripts\Mudguard.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
+    <Compile Include="Assets\External Assets\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
+    <Compile Include="Assets\External Assets\Supercyan Character Pack Free Sample\Scripts\CameraLogic.cs" />
+    <Compile Include="Assets\External Assets\Supercyan Character Pack Free Sample\Scripts\SimpleCharacterControl.cs" />
     <Compile Include="Assets\ProgressBar\Scene\Demo.cs" />
     <Compile Include="Assets\ProgressBar\Script\ProgressBar.cs" />
     <Compile Include="Assets\ProgressBar\Script\ProgressBarCircle.cs" />
-    <Compile Include="Assets\RadarChart\Scripts\RadarPolygon.cs" />
-    <Compile Include="Assets\RadarChartUI\Scripts\DemoUI\ChartSideTitleController.cs" />
-    <Compile Include="Assets\RadarChartUI\Scripts\DemoUI\ChartSideValueController.cs" />
-    <Compile Include="Assets\RadarChartUI\Scripts\DemoUI\TestUIController.cs" />
-    <Compile Include="Assets\RadarChartUI\Scripts\RadarChartCore\RadarChart.cs" />
-    <Compile Include="Assets\RadarChartUI\Scripts\RadarChartCore\RadarChartLine.cs" />
-    <Compile Include="Assets\RadarChartUI\Scripts\RadarChartCore\RadarChartPolygon.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -170,55 +267,91 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\cameraMouse.cs" />
+    <Compile Include="Assets\Scripts\CharacterAnimator.cs" />
     <Compile Include="Assets\Scripts\close.cs" />
+    <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\interactButtons.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Inventory\InventorySlot.cs" />
+    <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Item.cs" />
+    <Compile Include="Assets\Scripts\Inventory\ItemPickup.cs" />
     <Compile Include="Assets\Scripts\menu.cs" />
     <Compile Include="Assets\Scripts\monster.cs" />
     <Compile Include="Assets\Scripts\monsterStats.cs" />
     <Compile Include="Assets\Scripts\move.cs" />
     <Compile Include="Assets\Scripts\moveToNextDay.cs" />
     <Compile Include="Assets\Scripts\MyInputModule.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerMotor.cs" />
     <Compile Include="Assets\Scripts\scheduleMenu.cs" />
     <Compile Include="Assets\Scripts\statusBar.cs" />
     <Compile Include="Assets\Scripts\time.cs" />
     <Compile Include="Assets\Scripts\training.cs" />
     <Compile Include="Assets\Scripts\viewChange.cs" />
     <Compile Include="Assets\Scripts\wander.cs" />
-    <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\CameraLogic.cs" />
-    <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\SimpleCharacterControl.cs" />
-    <None Include="Assets\FImpossible Games\FBasic Assets\Others\mrsmonster.txt" />
-    <None Include="Assets\FImpossible Games\FBasic Assets\Others\S_3DText Shader.shader" />
-    <None Include="Assets\Grass And Flowers Pack 1\Example Scene\Skyboxes\_skybox info.txt" />
-    <None Include="Assets\VertexColorFarmAnimals\Shaders\VertexColorUnlit.shader" />
-    <None Include="Assets\FImpossible Games\FBasic Assets\Read Me - FBasicAssets.txt" />
-    <None Include="Assets\EazyCamera\README.txt" />
-    <None Include="Assets\FImpossible Games\FBasic Assets\FHelpers\FHelpers - ReadMe.txt" />
-    <None Include="Assets\FImpossible Games\FBasic Assets\Shaders\FPhantomRefractive.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
+    <None Include="Assets\External Assets\FImpossible Games\FBasic Assets\Others\mrsmonster.txt" />
+    <None Include="Assets\External Assets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Environment\Water (Basic)\DO_NOT_WORK_IN_VR.txt" />
+    <None Include="Assets\External Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Effects\Projectors\Guidelines.txt" />
+    <None Include="Assets\External Assets\FImpossible Games\FBasic Assets\Others\S_3DText Shader.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Effects\ImageEffects\Readme.txt" />
+    <None Include="Assets\External Assets\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+    <None Include="Assets\External Assets\Grass And Flowers Pack 1\Example Scene\Skyboxes\_skybox info.txt" />
+    <None Include="Assets\External Assets\Standard Assets\Vehicles\Aircraft\AircraftGuidelines.txt" />
+    <None Include="Assets\External Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
+    <None Include="Assets\External Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Environment\Water\DO_NOT_WORK_IN_VR.txt" />
+    <None Include="Assets\External Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+    <None Include="Assets\External Assets\VertexColorFarmAnimals\Shaders\VertexColorUnlit.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
+    <None Include="Assets\External Assets\FImpossible Games\FBasic Assets\Read Me - FBasicAssets.txt" />
+    <None Include="Assets\External Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\External Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Vehicles\Car\CarGuidelines.txt" />
+    <None Include="Assets\External Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+    <None Include="Assets\External Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
+    <None Include="Assets\External Assets\EazyCamera\README.txt" />
+    <None Include="Assets\External Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+    <None Include="Assets\External Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+    <None Include="Assets\External Assets\FImpossible Games\FBasic Assets\FHelpers\FHelpers - ReadMe.txt" />
+    <None Include="Assets\External Assets\FImpossible Games\FBasic Assets\Shaders\FPhantomRefractive.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+    <None Include="Assets\External Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+    <None Include="Assets\External Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>V:/Unity Projects/Monster Rancher/MR Test/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>V:/Unity Projects/Monster Rancher/MR Test/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>V:/Unity Projects/Monster Rancher/MR Test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>V:/Unity Projects/Monster Rancher/MR Test/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>V:/Unity Projects/Monster Rancher/MR Test/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>V:/Unity Projects/Monster Rancher/MR Test/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>V:/Unity Projects/Monster Rancher/MR Test/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>V:/Unity Projects/Monster Rancher/MR Test/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>V:/Unity Projects/Monster Rancher/MR Test/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>V:/Unity Projects/Monster Rancher/MR Test/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>V:/Unity Projects/Monster Rancher/MR Test/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
@@ -228,6 +361,12 @@
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>V:/Unity Projects/Monster Rancher/MR Test/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>V:/Unity Projects/Monster Rancher/MR Test/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>V:/Unity Projects/Monster Rancher/MR Test/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>V:/Unity Projects/Monster Rancher/MR Test/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -772,12 +911,6 @@
     <Reference Include="Boo.Lang">
       <HintPath>V:/Unity Projects/2019.2.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{D9D29C02-54A7-57E7-80FA-AA354BA12E19}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

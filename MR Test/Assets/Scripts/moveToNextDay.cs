@@ -18,6 +18,7 @@ public class moveToNextDay : MonoBehaviour
     public GameObject infoCanvas;
     public GameObject scheduleCanvas;
     public GameObject progressCanvas;
+    public GameObject fadeCanvas;
     public Text txt0, txt1, txt2, txt3, txt4, txt5, txt6, txt7;
 
     public GameObject mon, player;
@@ -46,6 +47,8 @@ public class moveToNextDay : MonoBehaviour
     private int currentStat;
     private int statIncNum;
     private int progVal;
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -329,8 +332,8 @@ public class moveToNextDay : MonoBehaviour
 
     IEnumerator runNextday()
     {
-
-        player.GetComponent<SimpleCharacterControl>().enabled = false;
+        player.GetComponent<PlayerMotor>().stopMovement();
+        player.GetComponent<PlayerController>().enabled = false;
         StartCoroutine(testFadeOut());
 
         yield return new WaitForSeconds(2.0f);
@@ -350,7 +353,7 @@ public class moveToNextDay : MonoBehaviour
         //insert stuff here to happen before screen is faded back in
         player.transform.position = new Vector3(20.23f, 30.0f, 29.64f);
         mon.transform.position = new Vector3(13.06f, 30.0f, 53.32f);
-        player.GetComponent<SimpleCharacterControl>().enabled = true;
+        player.GetComponent<PlayerController>().enabled = true;
 
         mon.GetComponent<monsterStats>().monster.moveEnergy();
 
@@ -653,6 +656,7 @@ public class moveToNextDay : MonoBehaviour
     {
         while (true)
         {
+            fadeCanvas.SetActive(true);
             fadeVal = GameObject.Find("fadeImage").GetComponent<CanvasGroup>().alpha;
 
             if (fadeVal < 1.0f)
@@ -686,6 +690,7 @@ public class moveToNextDay : MonoBehaviour
             }
             else
             {
+                fadeCanvas.SetActive(false);
                 break;
             }
         }
