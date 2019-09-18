@@ -17,6 +17,7 @@ public class monsterStats : MonoBehaviour
 
     string type;
 
+    public float hunger;
 
     // Start is called before the first frame update
     void Start()
@@ -33,15 +34,16 @@ public class monsterStats : MonoBehaviour
         dexterity = monster.dexterity;
         defense = monster.defense;
         stamina = monster.stamina;
-        
+                
         GameObject.Find("statusText").GetComponent<Text>().text = monster.energy[monster.energyIndex];
-        GameObject.Find("nameTxt").GetComponent<Text>().text = name;
+        GameObject.Find("nameTxt").GetComponent<Text>().text = GameObject.Find("monster").transform.GetChild(0).gameObject.name;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        hunger = monster.hungerVal;
     }
 
     void giveStats()
@@ -67,5 +69,9 @@ public class monsterStats : MonoBehaviour
     {
 
     }
+
+
+
+
 
 }

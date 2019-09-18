@@ -4,12 +4,14 @@ using System.Collections;
 /// <summary>
 /// Creates wandering behaviour for a CharacterController.
 /// </summary>
+/// 
+
 [RequireComponent(typeof(CharacterController))]
 public class wander : MonoBehaviour
 {
-    public float speed = 5;
-    public float directionChangeInterval = 1;
-    public float maxHeadingChange = 30;
+    public float speed = 5; //Speed of movement
+    public float directionChangeInterval = 1; //How frequently the direction is changed
+    public float maxHeadingChange = 100; //Variance of directions chosen
 
     CharacterController controller;
     float heading;

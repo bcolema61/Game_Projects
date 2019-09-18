@@ -78,7 +78,7 @@ public class scheduleMenu : MonoBehaviour
         year = time.year;
 
 
-        monster = GameObject.Find("penguin").GetComponent<monsterStats>();
+        monster = GameObject.Find("monster").GetComponent<monsterStats>();
 
         buttonClicked = false;
 

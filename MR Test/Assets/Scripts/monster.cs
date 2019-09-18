@@ -24,12 +24,23 @@ public class monster
 
     public int energyVal = 100;
 
+    public int hungerVal = 100;
+    public int hungerIndex;
+    public string[] hunger = new string[] { "Full", "Satiated", "Indifferent", "Hungry", "Starving", "Famished" };
+
     public float strLevFlex, dexLevFlex, intLevFlex, mndLevFlex, defLevFlex, staLevFlex;
+
+    //Configure how quickly energy and hunger diminishes each week
+    int energyRate = 15;
+    int hungerRate = 10;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         energyIndex = 0;
+
     }
 
     void Awake()
@@ -45,7 +56,7 @@ public class monster
 
     public void moveEnergy()
     {
-        energyVal = energyVal - 15;
+        energyVal = energyVal - energyRate;
 
         if (energyVal <= 0)
         {
@@ -150,6 +161,64 @@ public class monster
     {
 
         return 0;
+    }
+
+    public void moveHunger()
+    {
+        Debug.Log("moving hunger: " + hungerVal);
+        hungerVal = hungerVal - hungerRate;
+
+        if (hungerVal <= 0)
+        {
+            hungerIndex = 5;
+        }
+        if (hungerVal >= 1 && hungerVal <= 9)
+        {
+            hungerIndex = 5;
+        }
+        if (hungerVal >= 10 && hungerVal <= 19)
+        {
+            hungerIndex = 5;
+        }
+        if (hungerVal >= 20 && hungerVal <= 29)
+        {
+            hungerIndex = 4;
+        }
+        if (hungerVal >= 30 && hungerVal <= 39)
+        {
+            hungerIndex = 3;
+        }
+        if (hungerVal >= 40 && hungerVal <= 49)
+        {
+            hungerIndex = 3;
+        }
+        if (hungerVal >= 50 && hungerVal <= 59)
+        {
+            hungerIndex = 2;
+        }
+        if (hungerVal >= 60 && hungerVal <= 69)
+        {
+            hungerIndex = 2;
+        }
+        if (hungerVal >= 70 && hungerVal <= 79)
+        {
+            hungerIndex = 1;
+        }
+        if (hungerVal >= 80 && hungerVal <= 89)
+        {
+            hungerIndex = 1;
+        }
+        if (hungerVal >= 90 && hungerVal <= 100)
+        {
+            hungerIndex = 0;
+        }
+
+        if (hungerVal < 0)
+        {
+            hungerVal = 0;
+        }
+
+        Debug.Log("done moving hunger: " + hungerVal);
     }
 
 

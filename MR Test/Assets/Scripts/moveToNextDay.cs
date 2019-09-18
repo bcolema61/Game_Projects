@@ -4,49 +4,47 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UI.Extensions;
 
+//Contains interface GameObjects for updating UI upon weekly changes
 public class moveToNextDay : MonoBehaviour
 {
-    float fadeVal;
-    float fadeTime = 0.05f;
-    bool fadeOutBool;
-    bool fadeInBool;
-    bool inFirst = false;
+    float fadeVal; //holds value for fadeImage GO alpha
+    float fadeTime = 0.05f; //duration of fade in/out
 
-    public GameObject mainCanvas;
-    public GameObject trainingCanvas;
-    public GameObject monstercanvas;
-    public GameObject infoCanvas;
-    public GameObject scheduleCanvas;
-    public GameObject progressCanvas;
-    public GameObject fadeCanvas;
-    public Text txt0, txt1, txt2, txt3, txt4, txt5, txt6, txt7;
+    public GameObject mainCanvas; //Set to main canvas
+    public GameObject trainingCanvas; //Set to training canvas
+    public GameObject monstercanvas; //Set to monster canvas
+    public GameObject infoCanvas; //Set to info canvas
+    public GameObject scheduleCanvas; //Set to schedule canvas
+    public GameObject progressCanvas; //Set to progress canvas
+    public GameObject fadeCanvas; //Set to fade canvas
+    public Text txt0, txt1, txt2, txt3, txt4, txt5, txt6, txt7;  //Schedule button text fields
 
-    public GameObject mon, player;
+    public GameObject mon, player; //Set to monster and player
 
-    public time time = new time();
+    public time time = new time(); //This is set to the Time Tracker Game Object's time script
 
-    string[] movingOnButtons = new string[8];
-    string[] movingOnButtonsTemp = new string[8];
+    string[] movingOnButtons = new string[8]; //Holds values for monthly schedule training buttons
+    string[] movingOnButtonsTemp = new string[8]; //Holds the same values temporarily so the weekly training plan is shifted upon new week
 
-    monsterStats monster;
-    GameObject monsterGO;
-    string currentTraining;
-    Vector3 strPos, intPos, mndPos, dexPos, defPos, staPos, wanPos, resPos;
-    Quaternion strRot, intRot, mndRot, dexRot, defRot, staRot, wanRot, resRot;
+    monsterStats monster; //Set to monster Game Object's stats
+    GameObject monsterGO; //Set to monster Game Object
+    string currentTraining; //The current week's training
+    Vector3 strPos, intPos, mndPos, dexPos, defPos, staPos, wanPos, resPos; //monster's position for each training excersize
+    Quaternion strRot, intRot, mndRot, dexRot, defRot, staRot, wanRot, resRot; //monster's rotation for each training excersize
 
-    float tempRand1, tempRand2, tempRand3;
-    float tempF1, tempF2;
-    float tempResult;
+    float tempRand1, tempRand2, tempRand3; //Used for calculating randomness in weekly stat gain
+    float tempF1, tempF2; //Temporary values for monster's stat flex
+    float tempResult; //Holds the result of the above calculations
 
-    public RadarPolygon chart;
+    public RadarPolygon chart; //Holds the radar chart for weekly progress UI
 
-    public ProgressBar progBar, energyBar, hungerBar;
+    public ProgressBar progBar, energyBar, hungerBar; //Holds the progress bars for weekly progress UI
 
-    public GameObject regUp, greatUp;
+    public GameObject regUp, greatUp; //Images for regular increase vs great increase
 
-    private int currentStat;
-    private int statIncNum;
-    private int progVal;
+    private int currentStat; //Set to whichever stat is being trained
+    private int statIncNum; //Set to the value the stat increases by
+    private int progVal; //This just keeps the value of the progress bar between 1 and 100 depending on the current value
 
     
 
@@ -55,8 +53,8 @@ public class moveToNextDay : MonoBehaviour
     {
         time = GameObject.Find("timeTracker").GetComponent<moveToNextDay>().time;
 
-        monster = GameObject.Find("penguin").GetComponent<monsterStats>();
-        monsterGO = GameObject.Find("penguin");
+        monsterGO = GameObject.Find("monster").transform.GetChild(0).gameObject;
+        monster = GameObject.Find("monster").GetComponent<monsterStats>();
 
         strPos = new Vector3(19.93f, 30.0f, 53.61f);
         strRot = new Quaternion(0.0f, 185.875f, 0.0f, 0.0f);
@@ -309,7 +307,7 @@ public class moveToNextDay : MonoBehaviour
 
     private void setProgHunger()
     {
-
+        hungerBar.BarValue = monster.monster.hungerVal;
     }
 
     private void setRegTrain()
@@ -356,6 +354,8 @@ public class moveToNextDay : MonoBehaviour
         player.GetComponent<PlayerController>().enabled = true;
 
         mon.GetComponent<monsterStats>().monster.moveEnergy();
+
+        mon.GetComponent<monsterStats>().monster.moveHunger();
 
         time.nextWeek();
 
